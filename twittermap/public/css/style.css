@@ -1,0 +1,23 @@
+@import url("reset.css");
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background: #222 url("/images/padded.png");
+    box-shadow: inset 0 -3px 5px #000, 0 1px 0 rgba(255,255,255, 0.15);
+    color: #fff;
+    font: 400 16px/2.5em "Lobster", sans-serif;
+    position: relative;
+    text-shadow: 0 1px 3px #000;
+    text-indent: 15px;
+    z-index: 9999;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 80%;
+}

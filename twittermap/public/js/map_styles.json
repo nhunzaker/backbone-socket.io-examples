@@ -1,0 +1,49 @@
+{
+  featureType: "administrative",
+  elementType: "labels",
+  stylers: [
+    { visibility: "off" }
+  ]
+},{
+  featureType: "landscape.natural",
+  stylers: [
+    { hue: "#0000ff" },
+    { lightness: -84 },
+    { visibility: "off" }
+  ]
+},{
+  featureType: "water",
+  stylers: [
+    { visibility: "on" },
+    { saturation: -61 },
+    { lightness: -63 }
+  ]
+},{
+  featureType: "poi",
+  stylers: [
+    { visibility: "off" }
+  ]
+},{
+  featureType: "road",
+  stylers: [
+    { visibility: "off" }
+  ]
+},{
+  featureType: "administrative",
+  elementType: "labels",
+  stylers: [
+    { visibility: "off" }
+  ]
+},{
+  featureType: "landscape",
+  stylers: [
+    { visibility: "off" }
+  ]
+},{
+  featureType: "administrative",
+  stylers: [
+    { visibility: "off" }
+  ]
+},{
+},{
+}

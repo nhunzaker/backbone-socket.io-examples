@@ -1,0 +1,228 @@
+@import url(http://fonts.googleapis.com/css?family=Rosario);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: #fff url("/images/old_mathematics.png");
+    color: #000;
+    font:  normal 100%/1.5em Rosario, Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: #777 url("/images/tactile_noise.png");
+    border-bottom: 1px solid #333;
+    box-shadow: inset 0 -3px 10px #000;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+#logo {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 25px;
+    text-decoration: none;
+    text-shadow: 0 0px 40px rgba(255, 255, 255, 0.75);
+    z-index: 90;
+    
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+}
+
+#container {
+    width:  100%;
+    height:  100%;
+    overflow:  hidden;
+    top: 0;
+    position:  absolute;
+    z-index:  0;
+}
+
+.patch {
+    background: #fff url("/images/old_mathematics.png");
+    color: #111;
+    left:  0;
+    padding: 50px 50px;
+    width: 90%;
+    height: 90%;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.25);
+    z-index: 0;
+}
+
+.patch h2 {
+    font-weight: bold;
+    margin-top: 40px;
+    text-shadow: 0 1px 3px #fff;
+}
+
+.patch.selected {
+    z-index: 1;
+}
+
+.tab {
+    background: #333;
+    border: 1px solid #222;
+    border-radius: 12px;
+    box-shadow:  inset 0 1px 0 rgba(255,255,255,0.25);
+    cursor: pointer;
+    color: #fefefe;
+    position: fixed;
+    font-size: 14px;
+    line-height: 25px;
+    overflow: hidden;
+    padding: 0 8px;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    white-space: nowrap;
+    width: 50px;
+    z-index: 90;
+}
+
+.tab.selected {
+    background: #c33;
+    border:  1px solid #a33;
+}
+
+.tab:hover {
+    text-shadow: 0 0 25px rgba(255,255,255,0.8);
+}
+
+
+
+#toolbar {
+    background: #777 url("/images/tactile_noise.png");
+    border: 1px solid #444;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 5px 0;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 30px;
+    z-index: 90;
+    
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+#toolbar ul li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#toolbar ul li a {
+    background: #ccc;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: block;
+    color: #333;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-style: italic;;
+    margin: 5px auto ;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    width: 15px;
+    line-height: 15px;
+    
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), 0 1px 3px #111;
+}
+
+.flash { 
+    background: #eee;
+    border: 1px solid #ccc;
+    color: #333; 
+    cursor: pointer; 
+    display: block; 
+    font-size: 14px; 
+    right: 10px; 
+    max-width: 350px; 
+    padding: 5px 20px; 
+    position: fixed; 
+    top: 60px;  
+    border-radius: 4px; 
+    box-shadow: inset 0 1px 1px #fff; 
+    z-index: 100;
+}
+.flash.success { 
+    background-color: #E6EFC2; 
+    color: #264409; 
+    border-color: #C6D880; 
+    box-shadow: inset 0 1px 0 #fff, #ADA 0 1px 3px; 
+}
+.flash.error, .flash.alert { 
+    background-color: #FBE3E4; 
+    color: #8A1F11; 
+    border-color: #FBC2C4; 
+    box-shadow: inset 0 1px 0 #fff, #FCC 0 1px 3px; 
+}
+.flash.notice { 
+    background-color: #FFF6BF; 
+    color: #514721; 
+    border-color: #FFD324; 
+    box-shadow: inset 0 1px 0 #fff, #CC6 0 1px 3px; 
+}
+.flash.info { 
+    background-color: #D5EDF8; 
+    color: #205791; 
+    border-color: #92CAE4; 
+    box-shadow: inset 0 1px 0 #fff, #CCF 0 1px 3px; 
+}
+
+
+.textblock {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 0.875em;
+    padding: 5px;;
+    position: absolute;
+    z-index: 20;
+    left: 40%;
+    top: 20%;
+    
+    -webkit-transition: 0.3s all linear;
+    
+}
+
+.textblock header {
+    background: #eee;
+    border: 1px solid #d9d9d9;
+    border-radius:3px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    text-indent:10px;
+}
+
+.textblock:hover, .textblock.ui-draggable-dragging {
+    background: #fff;
+    border-color: #d9d9d9;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
+.textblock .content {
+    background: rgba(255,255,255,0.75);
+    border: 1px solid #d9d9d9;
+    display: block;
+    padding: 15px;
+    min-height: 200px;
+    white-space: pre;
+    width: 350px;
+}
+
+
+
