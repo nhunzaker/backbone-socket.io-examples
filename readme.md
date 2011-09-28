@@ -10,7 +10,9 @@
 
 1. [Install node](http://nodejs.org/#download)
 
-Most of these examples rely on an NPM package called backbone-server. This package is an currenly nothing more than an abstraction on top of Express to lower the amount of code required to configure an Express server. For more information on backbone-server, [visit the Github page](https://github.com/nhunzaker/backbone-server).
+Most of these examples rely on an NPM package called backbone-server. This package is an currenly nothing more than an 
+abstraction on top of Express and Socket.IO to lower the amount of code required to configure the backend. For more information
+on backbone-server, [visit the Github page](https://github.com/nhunzaker/backbone-server).
 
 ## Questions?
 
