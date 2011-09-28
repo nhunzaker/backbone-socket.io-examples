@@ -4,7 +4,7 @@
 
 1. **Twittermap** - Fetches data from Twitter to post geo-tweets on to a styled google map. Uses Backbone.
 2. **Backbone Blog** - A blog directed by a Backbone router to dynamically traverse content. Uses Backbone and Socket.IO (to push down articles).
-3. **Patchwork (Very experimental)** - Connects users together to share code by dragging and dropping files into the browser. I have to say this is extremely testy and nowhere near completion. However I wanted to go ahead and post it and I will continue to improve it over time. Uses Backbone and NowJS (A socket.io framework). I strongly recommend using the mightiest browser you can find this one (Chrome works great).
+3. **Patchwork (Very experimental)** - Connects users together to share code by dragging and dropping files into the browser. I have to say this is extremely testy and nowhere near completion. However I wanted to go ahead and post it and I will continue to improve it over time. Uses Backbone and NowJS (A socket.io framework). I strongly recommend using the mightiest browser you can find for this one (Chrome works great).
 
 ## Getting Started
 
